@@ -24,7 +24,7 @@ function getSearchVal() {
     fetch(
       "http://api.openweathermap.org/data/2.5/weather?q=" +
         searchValue +
-        "&appid=d91f911bcf2c0f925fb6535547a5ddc9&units=imperial"
+        "&appid=ec8729364e810674192c41241dce0019=imperial"
     )
       .then(function (response) {
         return response.json();
@@ -74,7 +74,7 @@ function getSearchVal() {
     fetch(
       "http://api.openweathermap.org/data/2.5/forecast?q=" +
         searchValue +
-        "&appid=d91f911bcf2c0f925fb6535547a5ddc9&units=imperial"
+        "&appid=ec8729364e810674192c41241dce0019&units=imperial"
     )
       .then(function (response) {
         return response.json();
@@ -141,7 +141,7 @@ function getSearchVal() {
   
   function getUVIndex(lat, lon) {
     fetch(
-      "http://api.openweathermap.org/data/2.5/uvi?appid=d91f911bcf2c0f925fb6535547a5ddc9&lat=" +
+      "http://api.openweathermap.org/data/2.5/uvi?appid=ec8729364e810674192c41241dce0019&lat=" +
         lat +
         "&lon=" +
         lon
